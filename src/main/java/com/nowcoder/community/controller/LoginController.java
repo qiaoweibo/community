@@ -90,7 +90,7 @@ public class LoginController implements CommunityConstant {
         // 将验证码存入session
         session.setAttribute("kaptcha", text);
 
-        // 将突图片输出给浏览器
+        // 将图片输出给浏览器
         response.setContentType("image/png");
         try {
             OutputStream os = response.getOutputStream();
